@@ -3,15 +3,15 @@ import google.generativeai as genai
 import mysql.connector
 
 # Configure Gemini API
-API_KEY = "AIzaSyBKTbZgzd2e4ZmNykuQRGdrSc4h7YmhY9g"
+API_KEY = "YOUR_API_KEY"
 genai.configure(api_key=API_KEY)
 
 # Configure MySQL Database
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Welcome@2020",
-    database="soil_management"
+    host="HOST",
+    user="USER",
+    password="YOUR_PASSWORD",
+    database="DATABASE_NAME"
 )
 cursor = conn.cursor()
 
